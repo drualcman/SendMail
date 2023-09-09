@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<div class="mt-3">To:</div>
+<div>
+    <InputText @bind-Value=To />
+</div>  
+<div class="mt-3">Subject:</div>
+<div>
+    <InputText @bind-Value=Subject />
+</div>  
+<div class="mt-3">Body:</div>
+<div>
+    <InputText @bind-Value=Body />
+</div> 
+
+<div class="mt-3">
+<button class="btn btn-primary" @onclick=SendMail>Send</button>
+</div>
